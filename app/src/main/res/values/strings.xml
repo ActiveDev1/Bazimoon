@@ -1,0 +1,29 @@
+<resources>
+	<string name="app_name">Bazimoon</string>
+	<string name="bazimoon">Bazimoon</string>
+	<string name="loadpic">loadPic</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="close">close</string>
+	<string name="next">بعدی</string>
+	<string name="play_to_get_crown">بازی کن تا تاج پادشاهی ببری</string>
+	<string name="save_your_money">پول هاتو ذخیره کن</string>
+	<string name="login_pass">رمز عبورتو فراموش کردی؟</string>
+	<string name="login_btn">ورود</string>
+	<string name="txt_login">ورود</string>
+	<string name="login_pic">login_pic</string>
+	<string name="hint_username">نام کاربری</string>
+	<string name="hint_password">رمز عبور</string>
+	<string name="haveNo_account">تاحالا عضو نشدی؟</string>
+	<string name="txt_signin">ثبت نام</string>
+	<string name="sigin_pic">sigin_pic</string>
+	<string name="phone_Number">شماره موبایل</string>
+	<string name="have_account">قبلا عضو شدی؟</string>
+	<string name="edit_phoneNum">ویرایش</string>
+	<string name="txtGo_login"><u>ورود</u></string>
+	<string name="txtGo_sigin"><u>ثبت نام</u></string>
+	<string name="pick_profile">انتخاب عکس</string>
+	<string name="repassword">تکرار رمز عبور</string>
+
+</resources>

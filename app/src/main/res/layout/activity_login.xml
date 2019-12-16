@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".Login">
+
+
+	<TextView
+		android:id="@+id/txtHavent_account"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:fontFamily="@font/b_nazanin"
+		android:text="@string/haveNo_account"
+		android:textSize="17sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.008"
+		app:layout_constraintStart_toStartOf="@+id/guideline3"
+		app:layout_constraintTop_toBottomOf="@+id/btn_login"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<TextView
+		android:id="@+id/txtGo_signin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:fontFamily="@font/b_titr"
+		android:text="@string/txtGo_sigin"
+		android:textIsSelectable="true"
+		android:textSize="19sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toBottomOf="@+id/txtHavent_account"
+		app:layout_constraintEnd_toStartOf="@+id/guideline3"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/btn_login"
+		app:layout_constraintVertical_bias="1.0" />
+
+	<TextView
+		android:id="@+id/txtSignin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="25dp"
+		android:fontFamily="@font/b_titr"
+		android:textStyle="bold"
+		android:text="@string/txt_login"
+		android:textColor="@color/colorAccent"
+		android:textSize="36sp"
+		app:layout_constraintBottom_toTopOf="@+id/login_Username"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.967"
+		app:layout_constraintStart_toStartOf="@+id/guideline3"
+		app:layout_constraintTop_toBottomOf="@+id/login_picUp"
+		app:layout_constraintVertical_bias="0.187" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/login_Pass"
+		style="@style/TextInputLayout"
+		android:layout_width="333dp"
+		android:layout_height="57dp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline6"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/login_Username">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/login_pass_et"
+			android:layout_width="334dp"
+			android:layout_height="49dp"
+			android:drawableStart="@drawable/login_passico"
+			android:drawablePadding="10dp"
+			android:fontFamily="@font/b_nazanin"
+			android:hint="@string/hint_password"
+			android:inputType="textPassword"
+			android:layoutDirection="rtl"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/login_Username"
+		style="@style/TextInputLayout"
+		android:layout_width="333dp"
+		android:layout_height="57dp"
+		android:layout_marginTop="128dp"
+		app:layout_constraintBottom_toTopOf="@+id/login_Pass"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.56"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/login_picUp">
+
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/login_username_et"
+			android:layout_width="333dp"
+			android:layout_height="49dp"
+			android:drawableStart="@drawable/ic_login_userico"
+			android:drawablePadding="10dp"
+			android:fontFamily="@font/b_nazanin"
+			android:hint="@string/hint_username"
+			android:inputType="text"
+			android:layoutDirection="rtl"
+			android:textStyle="bold"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<ImageView
+		android:id="@+id/login_picUp"
+		android:layout_width="369dp"
+		android:layout_height="107dp"
+		android:contentDescription="@string/login_pic"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_login_pic" />
+
+	<TextView
+		android:id="@+id/lostPass"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/b_nazanin"
+		android:text="@string/login_pass"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/btn_login"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.089"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline6"
+		app:layout_constraintVertical_bias="0.146" />
+
+	<Button
+		android:id="@+id/btn_login"
+		android:layout_width="223dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="135dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="137dp"
+		android:background="@drawable/btn_descrip"
+		android:backgroundTint="@color/button_descrip"
+		android:text="@string/login_btn"
+		android:fontFamily="@font/b_titr"
+		android:textColor="@color/colorAccent"
+		app:cornerRadius="20dp"
+		android:gravity="center"
+		android:textSize="25sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.488"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guideline5"
+		app:layout_constraintVertical_bias="0.0" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_begin="155dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline5"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_end="140dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline6"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_begin="362dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

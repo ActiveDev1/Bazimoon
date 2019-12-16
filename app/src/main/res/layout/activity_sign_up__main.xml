@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SignUp_Main">
+
+	<ImageView
+		android:id="@+id/signin_PicUp"
+		android:layout_width="369dp"
+		android:layout_height="107dp"
+		android:contentDescription="@string/login_pic"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_login_pic" />
+
+	<ImageView
+		android:id="@+id/signin_phonePic"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="120dp"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="120dp"
+		android:background="@drawable/profile_main"
+		android:contentDescription="@string/sigin_pic"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.545"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline11"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_begin="155dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_end="140dp" />
+
+
+    <Button
+        android:id="@+id/pick_profile"
+        android:layout_width="95dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/btn_descrip"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/b_nazanin"
+        android:text="@string/pick_profile"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:translationZ="2dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
+
+	<com.rengwuxian.materialedittext.MaterialEditText
+		android:id="@+id/sigin_username_et"
+		android:layout_width="230dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="56dp"
+		android:drawableStart="@drawable/ic_login_userico"
+		android:drawablePadding="10dp"
+		android:fontFamily="@font/b_nazanin"
+		android:hint="@string/hint_username"
+		android:inputType="text"
+		android:layoutDirection="rtl"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/pick_profile"
+		app:met_floatingLabel="highlight"
+		app:met_maxCharacters="9"
+		app:met_primaryColor="?colorAccent"
+		app:met_singleLineEllipsis="false" />
+
+	<Button
+		android:id="@+id/btn_signin"
+		android:layout_width="223dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:background="@drawable/btn_descrip"
+		android:backgroundTint="@color/button_descrip"
+		android:fontFamily="@font/b_titr"
+		android:gravity="center"
+		android:text="@string/txt_signin"
+		android:textColor="@color/colorAccent"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		app:cornerRadius="20dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.503"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline"
+		app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

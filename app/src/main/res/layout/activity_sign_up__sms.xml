@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SignUp_SMS">
+
+	<ImageView
+		android:id="@+id/signin_PicUp"
+		android:layout_width="369dp"
+		android:layout_height="107dp"
+		android:contentDescription="@string/login_pic"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/ic_login_pic" />
+
+	<TextView
+		android:id="@+id/txtSignin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="36dp"
+		android:layout_marginEnd="25dp"
+		android:fontFamily="@font/b_titr"
+		android:textStyle="bold"
+		android:text="@string/txt_signin"
+		android:textColor="@color/colorAccent"
+		android:textSize="36sp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.965"
+		app:layout_constraintStart_toStartOf="@+id/guideline4"
+		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_begin="155dp" />
+
+	<ImageView
+		android:id="@+id/signin_phonePic"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="121dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="120dp"
+		android:contentDescription="@string/sigin_pic"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/txtSignin"
+		app:srcCompat="@drawable/ic_signup_msg" />
+
+	<TextView
+		android:id="@+id/edit_phoneNum"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/b_nazanin"
+		android:text="@string/edit_phoneNum"
+		android:textColor="#000000"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/guideline8"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.27"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/signin_phonePic"
+		app:layout_constraintVertical_bias="0.35000002" />
+
+	<TextView
+		android:id="@+id/txt_phone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:fontFamily="@font/b_nazanin"
+		android:text="+989220669124"
+		android:textColor="@color/button_descrip"
+		android:textSize="25sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/guideline8"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.16"
+		app:layout_constraintStart_toEndOf="@+id/edit_phoneNum"
+		app:layout_constraintTop_toBottomOf="@+id/signin_phonePic"
+		app:layout_constraintVertical_bias="0.35000002" />
+
+	<EditText
+		android:id="@+id/code0"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="8dp"
+		android:autofillHints="number"
+		android:background="@drawable/et_code"
+		android:ems="10"
+		android:gravity="center"
+		android:inputType="number"
+		android:maxLength="1"
+		android:translationZ="3dp"
+		app:layout_constraintBottom_toBottomOf="@+id/code1"
+		app:layout_constraintEnd_toStartOf="@+id/code1"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline8"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="LabelFor"
+		tools:targetApi="o" />
+
+	<EditText
+		android:id="@+id/code2"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_marginStart="4dp"
+		android:layout_marginTop="8dp"
+		android:autofillHints="number"
+		android:background="@drawable/et_code"
+		android:ems="10"
+		android:gravity="center"
+		android:inputType="number"
+		android:maxLength="1"
+		android:translationZ="3dp"
+		app:layout_constraintBottom_toBottomOf="@+id/code3"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="@+id/guideline10"
+		app:layout_constraintTop_toBottomOf="@+id/guideline8"
+		app:layout_constraintVertical_bias="1.0"
+		tools:ignore="LabelFor"
+		tools:targetApi="o" />
+
+	<EditText
+		android:id="@+id/code3"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		android:autofillHints="number"
+		android:background="@drawable/et_code"
+		android:ems="10"
+		android:gravity="center"
+		android:inputType="number"
+		android:maxLength="1"
+		android:translationZ="3dp"
+		app:layout_constraintBottom_toTopOf="@+id/guideline9"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toEndOf="@+id/code2"
+		app:layout_constraintTop_toBottomOf="@+id/guideline8"
+		app:layout_constraintVertical_bias="0.0"
+		tools:ignore="LabelFor"
+		tools:targetApi="o" />
+
+	<EditText
+		android:id="@+id/code1"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="4dp"
+		android:autofillHints="number"
+		android:background="@drawable/et_code"
+		android:ems="10"
+		android:gravity="center"
+		android:inputType="number"
+		android:maxLength="1"
+		android:translationZ="3dp"
+		app:layout_constraintBottom_toBottomOf="@+id/code2"
+		app:layout_constraintEnd_toStartOf="@+id/guideline10"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/guideline8"
+		app:layout_constraintVertical_bias="1.0"
+		tools:ignore="LabelFor"
+		tools:targetApi="o" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline8"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_end="253dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline9"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		app:layout_constraintGuide_end="140dp" />
+
+	<androidx.constraintlayout.widget.Guideline
+		android:id="@+id/guideline10"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintGuide_end="180dp" />
+
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/btn_signin"
+		android:layout_width="223dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:background="@color/button_descrip"
+		android:backgroundTint="@color/button_descrip"
+		app:cornerRadius="20dp"
+		android:gravity="center"
+		android:text="@string/next"
+		android:fontFamily="@font/b_titr"
+		android:textStyle="bold"
+		android:textColor="@color/colorAccent"
+		android:textSize="25sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.503"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline9"
+		app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
