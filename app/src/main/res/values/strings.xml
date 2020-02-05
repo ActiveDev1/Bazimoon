@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Bazimoon</string>
 	<string name="bazimoon">Bazimoon</string>
@@ -25,5 +26,16 @@
 	<string name="txtGo_sigin"><u>ثبت نام</u></string>
 	<string name="pick_profile">انتخاب عکس</string>
 	<string name="repassword">تکرار رمز عبور</string>
-
+	<string name="txtAdd_username_pic">نام خود را انتخاب کرده و یک عکس پروفایل اضافه کنید</string>
+	<string name="txtTerms_Conditions">در صورت ثبت نام شما با شرایط و ضوابط بازیمون موافقت می کنید</string>
+	<string name="txtPut_phoneNumber">لطفا شماره تلفن خود را وارد نمایید</string>
+	<string name="txt_number">+989220669124</string>
+	<string name="txt_ActivateCode">پیامکی حاوی کد فعال سازی به شماره شما ارسال شده است.</string>
+	<string name="_00_00">00:00</string>
+	<string name="Dont_receiveCode">کد را دریافت نکردید؟</string>
+	<string name="menu">menu</string>
+	<string name="mapbox_access_token">"pk.eyJ1IjoiYWN0aXZlZGV2IiwiYSI6ImNrNjJoMGc5ZzBjdjkzZnF3d2JhZG1hdTUifQ.eKen07Ie2PjeHzygnYEBaw"</string>
+	<string name="search_map">جستجو کنید</string>
+	<string name="red9_center">RED9 Center</string>
+	<string name="btnsearch">btnSearch</string>
 </resources>

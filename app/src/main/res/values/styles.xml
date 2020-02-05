@@ -8,6 +8,11 @@
 		<item name="colorAccent">@color/colorAccent</item>
 	</style>
 
+	<style name="HeaderBar">
+		<item name="android:background">#00C7C7</item>
+	</style>
+
+
 	<style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 		<item name="android:paddingBottom">8dp</item>
 	</style>

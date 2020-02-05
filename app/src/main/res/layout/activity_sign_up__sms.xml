@@ -17,22 +17,6 @@
 		app:layout_constraintTop_toTopOf="parent"
 		app:srcCompat="@drawable/ic_login_pic" />
 
-	<TextView
-		android:id="@+id/txtSignin"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="36dp"
-		android:layout_marginEnd="25dp"
-		android:fontFamily="@font/b_titr"
-		android:textStyle="bold"
-		android:text="@string/txt_signin"
-		android:textColor="@color/colorAccent"
-		android:textSize="36sp"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.965"
-		app:layout_constraintStart_toStartOf="@+id/guideline4"
-		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
-
 	<androidx.constraintlayout.widget.Guideline
 		android:id="@+id/guideline4"
 		android:layout_width="wrap_content"
@@ -45,20 +29,21 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="121dp"
-		android:layout_marginTop="8dp"
+		android:layout_marginTop="44dp"
 		android:layout_marginEnd="120dp"
 		android:contentDescription="@string/sigin_pic"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/txtSignin"
+		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp"
 		app:srcCompat="@drawable/ic_signup_msg" />
 
 	<TextView
 		android:id="@+id/edit_phoneNum"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:fontFamily="@font/b_nazanin"
+		android:layout_marginTop="19dp"
+		android:fontFamily="@font/iran_sans__regular"
 		android:text="@string/edit_phoneNum"
 		android:textColor="#000000"
 		android:textSize="17sp"
@@ -67,24 +52,23 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHorizontal_bias="0.27"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@+id/signin_phonePic"
-		app:layout_constraintVertical_bias="0.35000002" />
+		app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 	<TextView
 		android:id="@+id/txt_phone"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:fontFamily="@font/b_nazanin"
-		android:text="+989220669124"
+		android:layout_marginTop="32dp"
+		android:fontFamily="@font/iran_sans__regular"
+		android:text="@string/txt_number"
 		android:textColor="@color/button_descrip"
 		android:textSize="25sp"
 		android:textStyle="bold"
 		app:layout_constraintBottom_toTopOf="@+id/guideline8"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.16"
+		app:layout_constraintHorizontal_bias="0.235"
 		app:layout_constraintStart_toEndOf="@+id/edit_phoneNum"
-		app:layout_constraintTop_toBottomOf="@+id/signin_phonePic"
-		app:layout_constraintVertical_bias="0.35000002" />
+		app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 	<EditText
 		android:id="@+id/code0"
@@ -104,7 +88,7 @@
 		app:layout_constraintHorizontal_bias="1.0"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="@+id/guideline8"
-		app:layout_constraintVertical_bias="0.0"
+		app:layout_constraintVertical_bias="1.0"
 		tools:ignore="LabelFor"
 		tools:targetApi="o" />
 
@@ -135,7 +119,7 @@
 		android:layout_width="50dp"
 		android:layout_height="50dp"
 		android:layout_marginStart="8dp"
-		android:layout_marginTop="8dp"
+		android:layout_marginTop="24dp"
 		android:autofillHints="number"
 		android:background="@drawable/et_code"
 		android:ems="10"
@@ -148,7 +132,7 @@
 		app:layout_constraintHorizontal_bias="0.0"
 		app:layout_constraintStart_toEndOf="@+id/code2"
 		app:layout_constraintTop_toBottomOf="@+id/guideline8"
-		app:layout_constraintVertical_bias="0.0"
+		app:layout_constraintVertical_bias="0.9"
 		tools:ignore="LabelFor"
 		tools:targetApi="o" />
 
@@ -196,25 +180,64 @@
 		app:layout_constraintGuide_end="180dp" />
 
 
-	<com.google.android.material.button.MaterialButton
+	<ImageButton
 		android:id="@+id/btn_signin"
-		android:layout_width="223dp"
-		android:layout_height="wrap_content"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
 		android:layout_marginTop="16dp"
-		android:background="@color/button_descrip"
+		android:background="@drawable/btn_descrip"
 		android:backgroundTint="@color/button_descrip"
-		app:cornerRadius="20dp"
 		android:gravity="center"
-		android:text="@string/next"
-		android:fontFamily="@font/b_titr"
-		android:textStyle="bold"
-		android:textColor="@color/colorAccent"
-		android:textSize="25sp"
+		android:src="@drawable/ic_arrow"
+		android:elevation="3dp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.503"
+		app:layout_constraintHorizontal_bias="0.92"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="@+id/guideline9"
-		app:layout_constraintVertical_bias="0.0" />
+		app:layout_constraintVertical_bias="0.57"
+		android:contentDescription="@string/next" />
+
+	<TextView
+		android:id="@+id/textView4"
+		android:layout_width="236dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		android:fontFamily="@font/iran_sans__regular"
+		android:text="@string/txt_ActivateCode"
+		android:textColor="#000000"
+		android:textStyle="bold"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/signin_phonePic" />
+
+	<TextView
+		android:id="@+id/countDown"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/_00_00"
+		android:fontFamily="@font/iran_sans_bold"
+		android:textSize="30sp"
+		android:textColor="@color/colorAccent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/btn_signin"
+		app:layout_constraintHorizontal_bias="0.675"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline9"
+		app:layout_constraintVertical_bias="0.603" />
+
+	<TextView
+		android:id="@+id/receiveCode"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/Dont_receiveCode"
+		android:fontFamily="@font/iran_sans__regular"
+		android:textSize="14sp"
+		android:textColor="@color/colorAccent"
+		android:visibility="invisible"
+		app:layout_constraintBottom_toTopOf="@+id/countDown"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline9" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

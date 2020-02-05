@@ -1,11 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:mapbox="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
 
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar"
+		style="@style/HeaderBar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:elevation="10dp"
+		android:translationZ="2dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:targetApi="lollipop">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/achi_regular"
+			android:text="@string/bazimoon"
+			android:textSize="20sp"
+			android:textStyle="bold" />
+
+		<ImageButton
+			android:id="@+id/setting"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="start"
+			android:background="@drawable/ic_menu"
+			android:contentDescription="@string/menu"
+			tools:ignore="RtlHardcoded" />
+
+
+	</androidx.appcompat.widget.Toolbar>
+
+	<com.mapbox.mapboxsdk.maps.MapView
+		android:id="@+id/mapView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clickable="true"
+		android:focusable="true"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/toolbar"
+		mapbox:mapbox_cameraTargetLat="36.3048"
+		mapbox:mapbox_cameraTargetLng="59.5972"
+		mapbox:mapbox_cameraZoom="12" />
+
+
+	<LinearLayout
+		android:id="@+id/linearLayout3"
+		android:layout_width="290dp"
+		android:layout_height="40dp"
+		android:layout_marginBottom="35dp"
+		android:background="@drawable/rounded_corner_search"
+		android:backgroundTint="#04B4B4"
+		android:focusable="false"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:translationZ="3dp"
+		app:layout_constraintBottom_toBottomOf="@+id/mapView"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent">
+
+
+		<EditText
+			android:layout_width="240dp"
+			android:layout_height="match_parent"
+			android:id="@+id/map_search"
+			android:background="@android:color/transparent"
+			android:fontFamily="@font/estedad_medium"
+			android:hint="@string/search_map"
+			android:inputType="text"
+			android:paddingEnd="7dp"
+			android:paddingBottom="2dp"
+			android:textColorHint="#ffffff"
+			android:windowSoftInputMode="adjustPan"
+			tools:ignore="RtlSymmetry"
+			android:importantForAutofill="no" />
+
+		<ImageButton
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:id="@+id/btn_MapSearch"
+			android:layout_gravity="center"
+			android:background="@drawable/ic_map_search"
+			android:contentDescription="@string/btnsearch" />
+
+	</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

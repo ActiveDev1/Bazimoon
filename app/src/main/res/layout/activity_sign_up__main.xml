@@ -19,15 +19,15 @@
 
 	<ImageView
 		android:id="@+id/signin_phonePic"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="116dp"
+		android:layout_height="116dp"
 		android:layout_marginStart="120dp"
-		android:layout_marginTop="24dp"
+		android:layout_marginTop="132dp"
 		android:layout_marginEnd="120dp"
 		android:background="@drawable/profile_main"
 		android:contentDescription="@string/sigin_pic"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.545"
+		app:layout_constraintHorizontal_bias="0.636"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
 
@@ -46,64 +46,89 @@
 		app:layout_constraintGuide_end="140dp" />
 
 
-    <Button
-        android:id="@+id/pick_profile"
-        android:layout_width="95dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="108dp"
-        android:background="@drawable/btn_descrip"
-        android:backgroundTint="@color/colorAccent"
-        android:fontFamily="@font/b_nazanin"
-        android:text="@string/pick_profile"
-        android:textColor="#FFFFFF"
-        android:textSize="13sp"
-        android:textStyle="bold"
-        android:translationZ="2dp"
-        app:cornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
+	<Button
+		android:id="@+id/pick_profile"
+		android:layout_width="83dp"
+		android:layout_height="35dp"
+		android:layout_marginTop="225dp"
+		android:backgroundTint="@color/colorAccent"
+		android:elevation="3dp"
+		android:fontFamily="@font/iran_sans__regular"
+		android:text="@string/pick_profile"
+		android:textColor="#FFFFFF"
+		android:textSize="12sp"
+		android:textStyle="bold"
+		android:translationZ="2dp"
+		app:cornerRadius="200dp"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp" />
 
-	<com.rengwuxian.materialedittext.MaterialEditText
+	<EditText
 		android:id="@+id/sigin_username_et"
 		android:layout_width="230dp"
 		android:layout_height="wrap_content"
-		android:layout_marginTop="56dp"
+		android:layout_marginTop="40dp"
 		android:drawableStart="@drawable/ic_login_userico"
 		android:drawablePadding="10dp"
-		android:fontFamily="@font/b_nazanin"
+		android:fontFamily="@font/iran_sans__regular"
+		android:backgroundTint="#000000"
 		android:hint="@string/hint_username"
+		android:textColorHint="@color/button_descrip"
 		android:inputType="text"
+		android:elevation="3dp"
 		android:layoutDirection="rtl"
-		android:textStyle="bold"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/pick_profile"
-		app:met_floatingLabel="highlight"
-		app:met_maxCharacters="9"
-		app:met_primaryColor="?colorAccent"
-		app:met_singleLineEllipsis="false" />
+		android:autofillHints="username"
+		tools:targetApi="o"/>
 
-	<Button
+	<ImageButton
 		android:id="@+id/btn_signin"
-		android:layout_width="223dp"
-		android:layout_height="wrap_content"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
 		android:layout_marginTop="16dp"
 		android:background="@drawable/btn_descrip"
 		android:backgroundTint="@color/button_descrip"
-		android:fontFamily="@font/b_titr"
 		android:gravity="center"
-		android:text="@string/txt_signin"
-		android:textColor="@color/colorAccent"
-		android:textSize="18sp"
-		android:textStyle="bold"
-		app:cornerRadius="20dp"
+		android:src="@drawable/ic_arrow"
+		android:elevation="3dp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.503"
+		app:layout_constraintHorizontal_bias="0.92"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toTopOf="@+id/guideline"
-		app:layout_constraintVertical_bias="0.0" />
+		app:layout_constraintVertical_bias="0.578"
+		android:contentDescription="@string/next" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/txtAdd_username_pic"
+		android:textColor="#000000"
+		android:fontFamily="@font/iran_sans__regular"
+		android:textSize="15sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/signin_phonePic"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/signin_PicUp"
+		app:layout_constraintVertical_bias="0.628" />
+
+	<CheckBox
+		android:id="@+id/Terms_Conditions"
+		android:layout_width="253dp"
+		android:layout_height="wrap_content"
+		android:text="@string/txtTerms_Conditions"
+		android:textAlignment="viewStart"
+		android:fontFamily="@font/iran_sans__regular"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/btn_signin"
+		app:layout_constraintHorizontal_bias="0.842"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="@+id/guideline"
+		app:layout_constraintVertical_bias="0.627" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
